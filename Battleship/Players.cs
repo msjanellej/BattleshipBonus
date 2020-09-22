@@ -11,14 +11,25 @@ namespace Battleship
         //member variables
         // game board
         Gameboard gameboard;
-        
+        Gameboard opponentsBoard;
+        int score;
+        public List<Ships> fleet;
+        public Ships destroyer;
+        public Ships submarine;
+        public Ships battleship;
+        public Ships aircraftCarrier;
+
         //constructor
         public Players()
         {
-            //Instantiate the list of ships
-            // list of ships
-            
+            opponentsBoard = new Gameboard();
             gameboard = new Gameboard();
+            score = 0;
+            destroyer = new Destroyer();
+            submarine = new Submarine();
+            battleship = new Battleship();
+            aircraftCarrier = new AircraftCarrier();
+            fleet = new List<Ships>() { destroyer, submarine, battleship, aircraftCarrier };
         }
 
         //member methods

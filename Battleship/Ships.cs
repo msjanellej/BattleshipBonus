@@ -12,17 +12,29 @@ namespace Battleship
         public string name;
         public int width;
         // hits
-        public bool isSunk;
+        public bool isSunk; //why is it not having a value associated with it?
 
         //constructor
         public  Ships()
         {
+            isSunk = true;
 
         }
 
         //member methods
+        public bool CheckifSunk() //not sure if this should be an abstract class bc all ships have diff sizes
+        {
+            if (isSunk)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
-        // this will be the parent class for the types of ships.
+        
 
 
     }
