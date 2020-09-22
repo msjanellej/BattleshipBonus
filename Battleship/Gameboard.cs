@@ -11,11 +11,13 @@ namespace Battleship
     {
         // member variables
         //declare array
+        int[,] board;
         
         //constructor
         public Gameboard()
         {
-           
+            board = new int[20, 20];
+            
             
 
             // instantiate array here. 
@@ -23,8 +25,8 @@ namespace Battleship
         }
 
         //member methods
-        // method to choose location of ships should be here
-        // method to choose where to attack should be here.
+        
+        
         
     }
 }

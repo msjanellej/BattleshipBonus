@@ -22,17 +22,7 @@ namespace Battleship
         }
 
         //member methods
-        public bool CheckifSunk() //not sure if this should be an abstract class bc all ships have diff sizes
-        {
-            if (isSunk)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
+     
 
         
 

@@ -26,6 +26,7 @@ namespace Battleship
             Console.Clear();
             playerTwo.PlaceShips();
             Console.Clear();
+            PlayRound();
         }
         public void GiveRules()
         {
@@ -52,16 +53,52 @@ namespace Battleship
         }
         public void PlayRound()
         {
+            while (IsGameContinuing())
+            {
+
+            }
 
         }
-        // will need run game method
+
+        public bool IsGameContinuing()
+        {
+            if (playerOne.score ==4 || playerTwo.score == 4)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        //public void CheckifSunk() Not sure where to place this. 
+        //{
+        //    if (ship.isSunk)
+        //    {
+        //        playerOne.score++;
+        //    }
+        //}
+        public void DisplayWinner()
+        {
+            if (playerOne.score == 4)
+            {
+                Console.WriteLine("Player One Wins!!!");
+            }
+            else if (playerTwo.score == 4)
+            {
+                Console.WriteLine("Player Two Wins!!!");
+            }
+        }
+
+
+
         // will need to call method to place ships
         // need a play round method
-            // will need to show each player their game board with ship placement
-            // will need to show the opponents gameboard with ships hidden (unless theyve been hit) - call method
-            // will need a select coordinates/ attack to choose where player wants to attack - call method
-            // will need a Check for hits method to check to see if there is a hit
+        // will need to show each player their game board with ship placement
+        // will need to show the opponents gameboard with ships hidden (unless theyve been hit) - call method
+        // will need a select coordinates/ attack to choose where player wants to attack - call method
+        // will need a Check for hits method to check to see if there is a hit
         // need a is game continuing method
-        
+
     }
 }

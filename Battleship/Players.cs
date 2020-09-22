@@ -10,9 +10,9 @@ namespace Battleship
     {
         //member variables
         // game board
-        Gameboard gameboard;
-        Gameboard opponentsBoard;
-        int score;
+        public Gameboard gameboard;
+        public Gameboard opponentsBoard;
+        public int score;
         public List<Ships> fleet;
         public Ships destroyer;
         public Ships submarine;
@@ -36,6 +36,8 @@ namespace Battleship
         // output players game board to console
         // place ships
         // choose coordinates.
+        //Check for hits? 
+        
         public void PlaceShips()
         {
             Console.WriteLine("Please choose where you would like to place your ships");
@@ -45,5 +47,7 @@ namespace Battleship
         {
             Console.WriteLine("Please choose which coordinates you would like to attack");
         }
+        
+
     }
 }
