@@ -6,17 +6,24 @@ using System.Threading.Tasks;
 
 namespace Battleship
 {
-    class Ships
+    class  Ships
     {
         // member variables
+        public string name;
+        public int width;
+        // hits
+        public bool isSunk;
 
         //constructor
-        public Ships()
+        public  Ships()
         {
 
         }
 
         //member methods
+
+        // this will be the parent class for the types of ships.
+
 
     }
 }
